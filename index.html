@@ -1108,59 +1108,6 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
   if (isDesktopDevice()) {
     window.location.href = "https://g1.globo.com/";
   }
-</script>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notificações de Compra</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        .notification {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-    </style>
-</head>
-<body>
 
-    <h2>🔥 Alguém acabou de comprar! 🔥</h2>
-    <div id="purchaseNotification" class="notification"></div>
-
-    <script>
-        const nomes = [
-            "Carlos Silva", "Ana Souza", "Mariana Oliveira", "José Santos", 
-            "Fernanda Lima", "Paulo Henrique", "Camila Ferreira", "Roberto Costa",
-            "Isabela Martins", "Diego Nascimento", "Luana Alves", "Felipe Rocha"
-        ];
-
-        function mostrarCompra() {
-            const nomeAleatorio = nomes[Math.floor(Math.random() * nomes.length)];
-            const mensagem = ${nomeAleatorio} acabou de comprar! 🎉;
-            const notification = document.getElementById("purchaseNotification");
-
-            notification.textContent = mensagem;
-            notification.style.opacity = 1;
-
-            setTimeout(() => {
-                notification.style.opacity = 0;
-            }, 3000);
-        }
-
-        setInterval(mostrarCompra, 4000);
-    </script>
-
-</body>
-</html>
+   
